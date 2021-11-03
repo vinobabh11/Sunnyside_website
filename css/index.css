@@ -265,7 +265,10 @@ h1, h2, h3{
     display: flex;
     /* flex-flow: row wrap; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
     width: 100%;
     height: 26rem;
 }
@@ -301,7 +304,15 @@ h1, h2, h3{
 }
 
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:666px){
+    .header {
+        height: 90vh;
+        background: url('../images/mobile/image-header.jpg');  
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .header .navbar .nav-items {
         width: 100%;
         background-color: white;
@@ -343,5 +354,95 @@ h1, h2, h3{
 
     .header .navbar .img-ham{
         display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.3s;
+        flex-wrap: nowrap;
+    }
+
+    .header .title{
+        font-size: 4em;
+        margin-bottom: 3.5em;
+        margin-top: 4em;
+    }
+
+    .fcontainer{
+        display: flex;
+        flex-flow: column-reverse wrap;
+    }
+
+    .fbox{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .fcontainer .fbox h1{
+        font-size: 1.7rem;
+    }
+
+    .fcontainer .fbox p{
+        font-size: 1.2em;
+    }
+
+    .fcontainer .fbox a{
+        font-size: 1.2rem;
+    }
+
+    .fcontainer .order-1{
+        order: 1;
+    }
+
+    .img-lft{
+        order: 1;
+    }
+
+    .img-content h2{
+        margin-top: 8em;
+    }
+
+    .client-box{
+        height: 110vh;
+    }
+
+    .client-box h1 {
+        font-size: 2em;
+        margin-top: 3em;
+    }
+
+    .client-cnt{
+        flex-flow: column;
+        height: auto;
+    }
+
+    .circle-img{
+        height: 70px;
+        width: 70px;
+        margin: 2.5em 0;
+    }
+
+    .client-cnt-box{
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .client-cnt-box .about{
+        font-size: 1.2em;
+    }
+
+    .client-cnt-box .name-ocp h2{
+        font-size: 1.2rem;
+    }
+
+    .client-cnt-box .name-ocp p{
+        font-size: 1.1em;
+    }
+
+    .img-cnt{
+        flex-flow: column wrap;
+        justify-content: space-around;
+        width: 50%;
+        height: 12.9rem;
     }
 }
