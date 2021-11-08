@@ -270,7 +270,7 @@ h1, h2, h3{
     margin: 0;
     list-style: none;
     width: 100%;
-    height: 26rem;
+    height: 24.7rem;
 }
 
 .obj{
@@ -442,7 +442,20 @@ h1, h2, h3{
     .img-cnt{
         flex-flow: column wrap;
         justify-content: space-around;
-        width: 50%;
-        height: 12.9rem;
+        /* width: 100px; */
+        /* height: 12.9rem; */
+    }
+
+    .obj{
+        width: 100%;
+        height: 12rem;
+    }
+
+    .foot-logo{
+        font-size: 1.7em;
+    }
+
+    .foot-link a {
+        font-size: 1rem;
     }
 }
